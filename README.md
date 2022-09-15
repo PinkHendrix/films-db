@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Awesome tutorial from Weibenfalk, check it out on [YT](https://www.youtube.com/watch?v=Tdp_S_72mSI&t=482s) it's his 4th version of the project.
 
-\*\* Get your free API keys over at the [TheMovieDatabase](https://www.themoviedb.org/)
+- Get your free API keys over at the [TheMovieDatabase](https://www.themoviedb.org/)
 
 ## Getting Started
 
