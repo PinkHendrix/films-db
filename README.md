@@ -4,6 +4,13 @@ Awesome tutorial from Weibenfalk, check it out on [YT](https://www.youtube.com/w
 
 - Get your free API keys over at the [TheMovieDatabase](https://www.themoviedb.org/)
 
+## Tech Stack:
+
+- Next.js
+- TypeScript
+- React-Query
+- Tailwind CSS
+
 ## Getting Started
 
 First, run the development server:
