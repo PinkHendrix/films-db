@@ -10,16 +10,16 @@ import Card from '../components/Card/Card';
 import Spinner from '../components/Spinner/Spinner';
 
 const Home: NextPage = () => {
-  const [query, setQuery] = React.useState(''); // Preference to see what's coming from React
+  const [query, setQuery] = React.useState(''); // Preference to see what's coming from React, 'setQuery' is for search field
 
   const { data, fetchNextPage, isLoading, isFetching, error } =
-    useFetchMovies(query);
+    useFetchMovies(query); // All these props are coming from React-Query, our fetchHooks
 
   console.log(data);
 
   return (
     <main className="relative h-screen overflow-y-scroll">
-      <Header />
+      <Header setQuery={setQuery} />
       <Hero />
       <Grid />
       <Card />
