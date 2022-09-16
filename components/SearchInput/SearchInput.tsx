@@ -5,13 +5,20 @@ type Props = {
   setQuery: React.Dispatch<React.SetStateAction<string>>;
 };
 
+const TIME = 300; //300 ms to give the User a bit of time before we hit the API
+
 const SearchInput = ({ setQuery }: Props) => {
   const [text, setText] = React.useState('');
+  const timer = React.useRef<NodeJS.Timeout>();
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.currentTarget.value;
 
     setText(value);
+
+    timer.current = setTimeout(() => {
+      setQuery(value);
+    }, TIME);
   };
 
   return (
