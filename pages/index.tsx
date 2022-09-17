@@ -17,10 +17,17 @@ const Home: NextPage = () => {
   const { data, fetchNextPage, isLoading, isFetching, error } =
     useFetchMovies(query); // All these props are coming from React-Query, our fetchHooks
 
-  console.log(data);
+  const handleScroll = (e: React.UIEvent<HTMLElement>) => {
+    const { scrollTop, clientHeight, scrollHeight } = e.currentTarget;
+
+    if (scrollHeight - scrollTop === clientHeight) fetchNextPage();
+  };
 
   return (
-    <main className="relative h-screen overflow-y-scroll">
+    <main
+      className="relative h-screen overflow-y-scroll"
+      onScroll={handleScroll}
+    >
       <Header setQuery={setQuery} />
       {!query && data && data.pages ? (
         <Hero
@@ -61,7 +68,7 @@ const Home: NextPage = () => {
           : null}
       </Grid>
 
-      <Spinner />
+      {isLoading || isFetching ? <Spinner /> : null}
     </main>
   );
 };
