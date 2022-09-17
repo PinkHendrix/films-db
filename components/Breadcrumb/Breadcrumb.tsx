@@ -13,7 +13,7 @@ const Breadcrumb = ({ title }: Props) => (
         </span>
       </Link>
       <span className="block px-2">|</span>
-      <span className="font-bold truncate">{title}</span>
+      <span className="font-bold truncate text-cyan-200">{title}</span>
     </div>
   </div>
 );
