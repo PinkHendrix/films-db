@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 
-console.log('+1(800)867-53oh9 / Jenny, Song by Tommy Tutone');
+console.log('+1 (800) 867-53oh9 / Jenny, Song by Tommy Tutone');
 
 const Error: NextPage = () => (
   <div>
