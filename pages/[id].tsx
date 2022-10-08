@@ -13,6 +13,7 @@ import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 import MovieInfo from '../components/MovieInfo/MovieInfo';
 import Grid from '../components/Grid/Grid';
 import Card from '../components/Card/Card';
+
 // Types, server-side from Next not React-Query
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import type { Movie, Credits, Crew, Cast } from '../api/types';
@@ -47,7 +48,7 @@ const Movie: NextPage<Props> = ({ movie, cast, directors }) => (
       budget={movie.budget}
       revenue={movie.revenue}
     />
-    <Grid className="p-4 max-w-7xl m-auto" title="Actors">
+    <Grid className="p-4 max-w-7xl m-auto dark:bg-orange-600" title="Cast">
       {cast.map((actor) => (
         <Card
           key={actor.credit_id}
