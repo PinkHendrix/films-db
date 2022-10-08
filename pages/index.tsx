@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 
   return (
     <main
-      className="relative h-screen overflow-y-scroll"
+      className="relative h-screen overflow-y-scroll dark:bg-orange-600"
       onScroll={handleScroll}
     >
       <Header setQuery={setQuery} />
@@ -50,14 +50,14 @@ const Home: NextPage = () => {
         title={
           query
             ? `Search Results: ${data?.pages[0].total_results}`
-            : 'Popular Movies'
+            : 'Popular Flicks'
         }
       >
         {data && data.pages
           ? data.pages.map((page) =>
               page.results.map((movie) => (
                 <Link key={movie.id} href={`/${movie.id}`}>
-                  <div className="cursor-pointer hover:opacity-80 duration-300">
+                  <div className="cursor-pointer hover:opacity-80 duration-300 dark:bg-orange-600">
                     <Card
                       imgUrl={
                         movie.poster_path

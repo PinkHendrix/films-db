@@ -16,7 +16,7 @@ const Header = ({ setQuery }: Props) => (
             <Image
               width="150"
               height="50"
-              src="/rmdb-logo.svg"
+              src="/Svg/decorative-lion-head-line-art-by-alexasfotos-obsidian.svg"
               alt="films-db-logo"
             />
           </div>
@@ -24,7 +24,7 @@ const Header = ({ setQuery }: Props) => (
             <Image
               width="42"
               height="42"
-              src="/rmdb-logo-small.svg"
+              src="/Svg/decorative-lion-head-line-art-by-alexasfotos-obsidian.svg"
               alt="films-db-logo-small"
             />
           </div>
