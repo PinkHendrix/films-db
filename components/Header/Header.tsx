@@ -14,18 +14,18 @@ const Header = ({ setQuery }: Props) => (
         <div className="flex items-center cursor-pointer">
           <div className="invisible md:visible">
             <Image
-              width="150"
+              width="50"
               height="50"
-              src="/Svg/decorative-lion-head-line-art-by-alexasfotos-obsidian.svg"
-              alt="films-db-logo"
+              src="/Svg/johnny_automatic_headphones_1.svg"
+              alt="lion-logo"
             />
           </div>
           <div className="absolute md:invisible pt-2">
             <Image
               width="42"
               height="42"
-              src="/Svg/decorative-lion-head-line-art-by-alexasfotos-obsidian.svg"
-              alt="films-db-logo-small"
+              src="/Svg/johnny_automatic_headphones_1.svg"
+              alt="lion-logo-small"
             />
           </div>
         </div>
