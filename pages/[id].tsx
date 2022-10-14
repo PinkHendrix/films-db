@@ -48,7 +48,8 @@ const Movie: NextPage<Props> = ({ movie, cast, directors }) => (
       budget={movie.budget}
       revenue={movie.revenue}
     />
-    {/* Had to added the dark:color here as well to display at the individual movie page */}
+    {/* Had to add the dark:color here as well to display at the individual movie page */}
+
     <Grid className="p-4 max-w-7xl m-auto dark:bg-orange-600" title="Cast">
       {cast.map((actor) => (
         <Card
